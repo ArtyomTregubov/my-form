@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Форма</title>
+</head>
+<body class="body">
+    <div class="page">
+
+       <form class="form" 
+             id="main-form"
+             method="post" >
+
+        <div class="form__segment">
+            <h1 class="form__title">Форма</h1>
+        </div>
+
+        <label for="name" class="form__label">
+            <input class="form__input"
+                   type="text"
+                   name="name"
+                   placeholder="Имя"
+                   id="name"><br><br>
+        </label>
+
+        <label for="password" class="form__label">
+            <input class="form__input"
+                   type="password"
+                   name="pass"
+                   placeholder="Пароль"
+                   id="pass"><br><br>
+        </label>
+
+        <label for="repass" class="form__label">
+            <input class="form__input"
+                   type="password"
+                   name="repass"
+                   placeholder="Проверка пароля"
+                   id="куpass"><br><br>
+        </label>
+
+        <span class="form__gender">Пол:</span>
+
+        <div class="form__inputs-box">
+            <input class="form__input-radio"
+                   type="radio"
+                   name="state"
+                   id="male"
+                   value="Мужской">
+
+            <label for="male" class="form__label-radio">Мужской</label>
+
+            <input class="form__input-radio"
+                   type="radio"
+                   name="state"
+                   id="female"
+                   value="Женский">
+
+            <label for="female" class="form__label-radio">Женский</label>
+        </div>
+
+        <div class="form__error" id="error"></div>
+             
+
+
+        <input class="form__submit-button"
+               type="submit"
+               name="submit"
+               value="Готово">
+
+       </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
